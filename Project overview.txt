@@ -1,0 +1,40 @@
+Project SRA - SRP003355
+
+Study: Pooled linkage analysis for discovery of Saccharomyces cerevisiae functional mutations by whole genome sequencing
+
+Study type: Whole Genome Sequencing
+
+3 samples: 
+
+Yeast vac22, wild-type segregant pool
+
+Name: vac22 wt
+Instrument: Illumina Genome Analyzer
+Strategy: WGS
+Source: GENOMIC
+Selection: RANDOM
+Layout: PAIRED
+Runs: 1 run, 11.5M spots, 897M bases
+SRR064547
+
+Yeast vac6, mutant segregant pool
+
+Name: vac6 mut
+Instrument: Illumina Genome Analyzer
+Strategy: WGS
+Source: GENOMIC
+Selection: RANDOM
+Layout: PAIRED
+Runs: 1 run, 20M spots, 1.4G bases
+SRR064546
+
+yeast vac6, wild-type segregant pool
+
+Name: vac6 wt
+Instrument: Illumina Genome Analyzer
+Strategy: WGS
+Source: GENOMIC
+Selection: RANDOM
+Layout: PAIRED
+Runs: 1 run, 19.8M spots, 1.4G bases
+SRR064545
