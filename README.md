@@ -1,1 +1,1 @@
-# AnalizaDanychNGS
+# NGS Data Analysis - Project
