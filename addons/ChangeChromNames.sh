@@ -15,4 +15,6 @@ seqtk "$GENOME" "$INDEX" >> "$NONMITGENOME"
 
 awk '$0 ~ ">" {print $1} $0 !~ ">" {print}' "$NONMITGENOME" >> "$REFERENCEGENOME"
 
+rm "$NONMITGENOME" 
+
  
