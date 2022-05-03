@@ -15,6 +15,7 @@ PROJECTS=(
 FORWARD="_1.fastq.gz"
 REVERSE="_2.fastq.gz"
 HTML="qc_fastp.html"
+
 # ----------------------------------------
 # FASTP QUALITY CONTROL AND TRIMMING
 
