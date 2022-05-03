@@ -1,0 +1,9 @@
+Downloading 1000000 paired-end reads from SRR064547
+Read 1000000 spots for SRR064547
+Written 1000000 spots for SRR064547
+Downloading 1000000 paired-end reads from SRR064546
+Read 1000000 spots for SRR064546
+Written 1000000 spots for SRR064546
+Downloading 1000000 paired-end reads from SRR064545
+Read 1000000 spots for SRR064545
+Written 1000000 spots for SRR064545
