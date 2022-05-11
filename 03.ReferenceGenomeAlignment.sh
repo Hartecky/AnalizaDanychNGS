@@ -22,12 +22,15 @@ bwa index "$REFERENCEGENOME"
 for SAMPLE in "${PROJECTS[@]}"
 do
 
-	bwa mem \
+	bwa aln \
 	-t 4 \
 	 "$REFERENCEGENOME" \
 	 "../qc_data/${SAMPLE}$FORWARD" \
-	 "../qc_data/${SAMPLE}$REVERSE" | \
-	 samtools view -@ 4 \
+	 "../qc_data/${SAMPLE}$REVERSE" > "${SAMPLE}.sai"
+
+	 bwa samse "$REFERENCEGENOME" "${SAMPLE}.sai" "../qc_data/${SAMPLE}$FORWARD" "../qc_data/${SAMPLE}$REVERSE" | \
+	 samtools view \
+	 -@ 4 \
 	 -Sb > "../alignment/${SAMPLE}.bam"
 
 done

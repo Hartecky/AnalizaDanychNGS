@@ -1,168 +1,139 @@
-[M::bwa_idx_load_from_disk] read 0 ALT contigs
-[M::process] read 1025704 sequences (40000036 bp)...
-[M::process] read 942042 sequences (36736932 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (221, 15318, 350902, 200)
-[M::mem_pestat] analyzing insert size distribution for orientation FF...
-[M::mem_pestat] (25, 50, 75) percentile: (1508, 2380, 2669)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4991)
-[M::mem_pestat] mean and std.dev: (1994.13, 887.78)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 6152)
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (310, 353, 408)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (114, 604)
-[M::mem_pestat] mean and std.dev: (357.16, 81.17)
-[M::mem_pestat] low and high boundaries for proper pairs: (16, 702)
-[M::mem_pestat] analyzing insert size distribution for orientation RF...
-[M::mem_pestat] (25, 50, 75) percentile: (2579, 2720, 2869)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1999, 3449)
-[M::mem_pestat] mean and std.dev: (2725.01, 190.11)
-[M::mem_pestat] low and high boundaries for proper pairs: (1709, 3739)
-[M::mem_pestat] analyzing insert size distribution for orientation RR...
-[M::mem_pestat] (25, 50, 75) percentile: (449, 2334, 2666)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 7100)
-[M::mem_pestat] mean and std.dev: (1750.04, 1057.91)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 9317)
-[M::mem_pestat] skip orientation FF
-[M::mem_pestat] skip orientation FR
-[M::mem_pestat] skip orientation RR
-[M::mem_process_seqs] Processed 1025704 reads in 43.285 CPU sec, 10.588 real sec
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (194, 13917, 319589, 234)
-[M::mem_pestat] analyzing insert size distribution for orientation FF...
-[M::mem_pestat] (25, 50, 75) percentile: (1514, 2271, 2602)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4778)
-[M::mem_pestat] mean and std.dev: (1939.02, 906.08)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 5866)
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (308, 352, 406)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (112, 602)
-[M::mem_pestat] mean and std.dev: (355.63, 82.79)
-[M::mem_pestat] low and high boundaries for proper pairs: (14, 700)
-[M::mem_pestat] analyzing insert size distribution for orientation RF...
-[M::mem_pestat] (25, 50, 75) percentile: (2578, 2720, 2869)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1996, 3451)
-[M::mem_pestat] mean and std.dev: (2724.35, 190.35)
-[M::mem_pestat] low and high boundaries for proper pairs: (1705, 3742)
-[M::mem_pestat] analyzing insert size distribution for orientation RR...
-[M::mem_pestat] (25, 50, 75) percentile: (432, 2353, 2636)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 7044)
-[M::mem_pestat] mean and std.dev: (1763.32, 1068.85)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 9248)
-[M::mem_pestat] skip orientation FF
-[M::mem_pestat] skip orientation FR
-[M::mem_pestat] skip orientation RR
-[M::mem_process_seqs] Processed 942042 reads in 43.185 CPU sec, 10.510 real sec
+[bwa_index] Pack FASTA... 0.06 sec
+[bwa_index] Construct BWT for the packed sequence...
+[bwa_index] 2.44 seconds elapse.
+[bwa_index] Update BWT... 0.04 sec
+[bwa_index] Pack forward-only FASTA... 0.04 sec
+[bwa_index] Construct SA from BWT and Occ... 1.18 sec
 [main] Version: 0.7.17-r1188
-[main] CMD: bwa mem -t 4 Saccharomyces.reference.genome.fa.gz ../qc_data/SRR064547_1.fastq.gz ../qc_data/SRR064547_2.fastq.gz
-[main] Real time: 24.123 sec; CPU: 88.280 sec
-[M::bwa_idx_load_from_disk] read 0 ALT contigs
-[M::process] read 1111740 sequences (40000054 bp)...
-[M::process] read 823180 sequences (29617440 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (2598, 171267, 175770, 1717)
-[M::mem_pestat] analyzing insert size distribution for orientation FF...
-[M::mem_pestat] (25, 50, 75) percentile: (69, 479, 1452)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4218)
-[M::mem_pestat] mean and std.dev: (868.64, 925.31)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 5601)
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (139, 275, 355)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 787)
-[M::mem_pestat] mean and std.dev: (258.64, 133.08)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 1003)
-[M::mem_pestat] analyzing insert size distribution for orientation RF...
-[M::mem_pestat] (25, 50, 75) percentile: (2395, 2547, 2696)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1793, 3298)
-[M::mem_pestat] mean and std.dev: (2561.89, 213.96)
-[M::mem_pestat] low and high boundaries for proper pairs: (1492, 3599)
-[M::mem_pestat] analyzing insert size distribution for orientation RR...
-[M::mem_pestat] (25, 50, 75) percentile: (30, 318, 1608)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4764)
-[M::mem_pestat] mean and std.dev: (826.59, 979.49)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 6342)
-[M::mem_pestat] skip orientation FF
-[M::mem_pestat] skip orientation RR
-[M::mem_process_seqs] Processed 1111740 reads in 88.452 CPU sec, 21.825 real sec
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1850, 126109, 127444, 1335)
-[M::mem_pestat] analyzing insert size distribution for orientation FF...
-[M::mem_pestat] (25, 50, 75) percentile: (45, 428, 1375)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4035)
-[M::mem_pestat] mean and std.dev: (802.20, 904.70)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 5365)
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (135, 271, 352)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 786)
-[M::mem_pestat] mean and std.dev: (256.03, 133.70)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 1003)
-[M::mem_pestat] analyzing insert size distribution for orientation RF...
-[M::mem_pestat] (25, 50, 75) percentile: (2395, 2548, 2698)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1789, 3304)
-[M::mem_pestat] mean and std.dev: (2563.11, 215.49)
-[M::mem_pestat] low and high boundaries for proper pairs: (1486, 3607)
-[M::mem_pestat] analyzing insert size distribution for orientation RR...
-[M::mem_pestat] (25, 50, 75) percentile: (26, 274, 1550)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4598)
-[M::mem_pestat] mean and std.dev: (799.90, 965.72)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 6122)
-[M::mem_pestat] skip orientation FF
-[M::mem_pestat] skip orientation RR
-[M::mem_process_seqs] Processed 823180 reads in 68.712 CPU sec, 16.838 real sec
+[main] CMD: bwa index Saccharomyces.reference.genome.fa.gz
+[main] Real time: 4.134 sec; CPU: 3.762 sec
+[bwa_aln] 17bp reads: max_diff = 2
+[bwa_aln] 38bp reads: max_diff = 3
+[bwa_aln] 64bp reads: max_diff = 4
+[bwa_aln] 93bp reads: max_diff = 5
+[bwa_aln] 124bp reads: max_diff = 6
+[bwa_aln] 157bp reads: max_diff = 7
+[bwa_aln] 190bp reads: max_diff = 8
+[bwa_aln] 225bp reads: max_diff = 9
+[bwa_aln_core] calculate SA coordinate... 5.30 sec
+[bwa_aln_core] write to the disk... 0.36 sec
+[bwa_aln_core] 262144 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 5.85 sec
+[bwa_aln_core] write to the disk... 0.33 sec
+[bwa_aln_core] 524288 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 7.25 sec
+[bwa_aln_core] write to the disk... 0.15 sec
+[bwa_aln_core] 786432 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 4.48 sec
+[bwa_aln_core] write to the disk... 0.11 sec
+[bwa_aln_core] 983873 sequences have been processed.
 [main] Version: 0.7.17-r1188
-[main] CMD: bwa mem -t 4 Saccharomyces.reference.genome.fa.gz ../qc_data/SRR064546_1.fastq.gz ../qc_data/SRR064546_2.fastq.gz
-[main] Real time: 42.168 sec; CPU: 159.102 sec
-[M::bwa_idx_load_from_disk] read 0 ALT contigs
-[M::process] read 1111424 sequences (40000000 bp)...
-[M::process] read 770520 sequences (27730996 bp)...
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (3452, 313148, 78205, 2393)
-[M::mem_pestat] analyzing insert size distribution for orientation FF...
-[M::mem_pestat] (25, 50, 75) percentile: (67, 672, 1526)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4444)
-[M::mem_pestat] mean and std.dev: (926.30, 947.37)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 5903)
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (162, 286, 347)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 717)
-[M::mem_pestat] mean and std.dev: (264.31, 117.42)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 902)
-[M::mem_pestat] analyzing insert size distribution for orientation RF...
-[M::mem_pestat] (25, 50, 75) percentile: (2228, 2912, 3175)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (334, 5069)
-[M::mem_pestat] mean and std.dev: (2642.48, 813.98)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 6016)
-[M::mem_pestat] analyzing insert size distribution for orientation RR...
-[M::mem_pestat] (25, 50, 75) percentile: (41, 472, 1587)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4679)
-[M::mem_pestat] mean and std.dev: (842.35, 956.93)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 6225)
-[M::mem_pestat] skip orientation FF
-[M::mem_pestat] skip orientation RR
-[M::mem_process_seqs] Processed 1111424 reads in 179.423 CPU sec, 44.580 real sec
-[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (2371, 217499, 54015, 1757)
-[M::mem_pestat] analyzing insert size distribution for orientation FF...
-[M::mem_pestat] (25, 50, 75) percentile: (66, 670, 1455)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4233)
-[M::mem_pestat] mean and std.dev: (914.65, 937.99)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 5622)
-[M::mem_pestat] analyzing insert size distribution for orientation FR...
-[M::mem_pestat] (25, 50, 75) percentile: (162, 286, 347)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 717)
-[M::mem_pestat] mean and std.dev: (264.61, 118.14)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 902)
-[M::mem_pestat] analyzing insert size distribution for orientation RF...
-[M::mem_pestat] (25, 50, 75) percentile: (2250, 2912, 3177)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (396, 5031)
-[M::mem_pestat] mean and std.dev: (2654.60, 802.78)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 5958)
-[M::mem_pestat] analyzing insert size distribution for orientation RR...
-[M::mem_pestat] (25, 50, 75) percentile: (40, 394, 1617)
-[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4771)
-[M::mem_pestat] mean and std.dev: (847.19, 957.75)
-[M::mem_pestat] low and high boundaries for proper pairs: (1, 6348)
-[M::mem_pestat] skip orientation FF
-[M::mem_pestat] skip orientation RR
-[M::mem_process_seqs] Processed 770520 reads in 118.386 CPU sec, 29.207 real sec
+[main] CMD: bwa aln -t 4 Saccharomyces.reference.genome.fa.gz ../qc_data/SRR064547_1.fastq.gz ../qc_data/SRR064547_2.fastq.gz
+[main] Real time: 13.279 sec; CPU: 24.962 sec
+[bwa_aln_core] convert to sequence coordinate... 0.87 sec
+[bwa_aln_core] refine gapped alignments... 0.05 sec
+[bwa_aln_core] print alignments... 0.40 sec
+[bwa_aln_core] 262144 sequences have been processed.
+[bwa_aln_core] convert to sequence coordinate... 0.83 sec
+[bwa_aln_core] refine gapped alignments... 0.05 sec
+[bwa_aln_core] print alignments... 0.38 sec
+[bwa_aln_core] 524288 sequences have been processed.
+[bwa_aln_core] convert to sequence coordinate... 0.95 sec
+[bwa_aln_core] refine gapped alignments... 0.05 sec
+[bwa_aln_core] print alignments... 0.45 sec
+[bwa_aln_core] 786432 sequences have been processed.
+[bwa_aln_core] convert to sequence coordinate... 0.86 sec
+[bwa_aln_core] refine gapped alignments... 0.04 sec
+[bwa_aln_core] print alignments... 0.27 sec
+[bwa_aln_core] 983873 sequences have been processed.
 [main] Version: 0.7.17-r1188
-[main] CMD: bwa mem -t 4 Saccharomyces.reference.genome.fa.gz ../qc_data/SRR064545_1.fastq.gz ../qc_data/SRR064545_2.fastq.gz
-[main] Real time: 77.003 sec; CPU: 299.620 sec
+[main] CMD: bwa samse Saccharomyces.reference.genome.fa.gz SRR064547.sai ../qc_data/SRR064547_1.fastq.gz ../qc_data/SRR064547_2.fastq.gz
+[main] Real time: 11.328 sec; CPU: 6.325 sec
+[bwa_aln] 17bp reads: max_diff = 2
+[bwa_aln] 38bp reads: max_diff = 3
+[bwa_aln] 64bp reads: max_diff = 4
+[bwa_aln] 93bp reads: max_diff = 5
+[bwa_aln] 124bp reads: max_diff = 6
+[bwa_aln] 157bp reads: max_diff = 7
+[bwa_aln] 190bp reads: max_diff = 8
+[bwa_aln] 225bp reads: max_diff = 9
+[bwa_aln_core] calculate SA coordinate... 6.45 sec
+[bwa_aln_core] write to the disk... 0.19 sec
+[bwa_aln_core] 262144 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 6.18 sec
+[bwa_aln_core] write to the disk... 0.22 sec
+[bwa_aln_core] 524288 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 5.75 sec
+[bwa_aln_core] write to the disk... 0.14 sec
+[bwa_aln_core] 786432 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 4.04 sec
+[bwa_aln_core] write to the disk... 0.09 sec
+[bwa_aln_core] 967460 sequences have been processed.
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa aln -t 4 Saccharomyces.reference.genome.fa.gz ../qc_data/SRR064546_1.fastq.gz ../qc_data/SRR064546_2.fastq.gz
+[main] Real time: 12.217 sec; CPU: 24.198 sec
+[bwa_aln_core] convert to sequence coordinate... 0.81 sec
+[bwa_aln_core] refine gapped alignments... 0.05 sec
+[bwa_aln_core] print alignments... 0.36 sec
+[bwa_aln_core] 262144 sequences have been processed.
+[bwa_aln_core] convert to sequence coordinate... 0.78 sec
+[bwa_aln_core] refine gapped alignments... 0.04 sec
+[bwa_aln_core] print alignments... 0.34 sec
+[bwa_aln_core] 524288 sequences have been processed.
+[bwa_aln_core] convert to sequence coordinate... 0.80 sec
+[bwa_aln_core] refine gapped alignments... 0.04 sec
+[bwa_aln_core] print alignments... 0.33 sec
+[bwa_aln_core] 786432 sequences have been processed.
+[bwa_aln_core] convert to sequence coordinate... 0.54 sec
+[bwa_aln_core] refine gapped alignments... 0.03 sec
+[bwa_aln_core] print alignments... 0.24 sec
+[bwa_aln_core] 967460 sequences have been processed.
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa samse Saccharomyces.reference.genome.fa.gz SRR064546.sai ../qc_data/SRR064546_1.fastq.gz ../qc_data/SRR064546_2.fastq.gz
+[main] Real time: 9.519 sec; CPU: 5.457 sec
+[bwa_aln] 17bp reads: max_diff = 2
+[bwa_aln] 38bp reads: max_diff = 3
+[bwa_aln] 64bp reads: max_diff = 4
+[bwa_aln] 93bp reads: max_diff = 5
+[bwa_aln] 124bp reads: max_diff = 6
+[bwa_aln] 157bp reads: max_diff = 7
+[bwa_aln] 190bp reads: max_diff = 8
+[bwa_aln] 225bp reads: max_diff = 9
+[bwa_aln_core] calculate SA coordinate... 5.30 sec
+[bwa_aln_core] write to the disk... 0.31 sec
+[bwa_aln_core] 262144 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 5.81 sec
+[bwa_aln_core] write to the disk... 0.14 sec
+[bwa_aln_core] 524288 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 6.12 sec
+[bwa_aln_core] write to the disk... 0.13 sec
+[bwa_aln_core] 786432 sequences have been processed.
+[bwa_aln_core] calculate SA coordinate... 3.38 sec
+[bwa_aln_core] write to the disk... 0.09 sec
+[bwa_aln_core] 940972 sequences have been processed.
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa aln -t 4 Saccharomyces.reference.genome.fa.gz ../qc_data/SRR064545_1.fastq.gz ../qc_data/SRR064545_2.fastq.gz
+[main] Real time: 11.754 sec; CPU: 22.379 sec
+[bwa_aln_core] convert to sequence coordinate... 0.83 sec
+[bwa_aln_core] refine gapped alignments... 0.04 sec
+[bwa_aln_core] print alignments... 0.35 sec
+[bwa_aln_core] 262144 sequences have been processed.
+[bwa_aln_core] convert to sequence coordinate... 0.78 sec
+[bwa_aln_core] refine gapped alignments... 0.04 sec
+[bwa_aln_core] print alignments... 0.34 sec
+[bwa_aln_core] 524288 sequences have been processed.
+[bwa_aln_core] convert to sequence coordinate... 0.68 sec
+[bwa_aln_core] refine gapped alignments... 0.04 sec
+[bwa_aln_core] print alignments... 0.36 sec
+[bwa_aln_core] 786432 sequences have been processed.
+[bwa_aln_core] convert to sequence coordinate... 0.51 sec
+[bwa_aln_core] refine gapped alignments... 0.03 sec
+[bwa_aln_core] print alignments... 0.20 sec
+[bwa_aln_core] 940972 sequences have been processed.
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa samse Saccharomyces.reference.genome.fa.gz SRR064545.sai ../qc_data/SRR064545_1.fastq.gz ../qc_data/SRR064545_2.fastq.gz
+[main] Real time: 9.868 sec; CPU: 5.289 sec
 
-real    2m27.634s
-user    9m29.451s
-sys     0m8.435s
+real    1m12.182s
+user    1m35.549s
+sys     0m5.753s
