@@ -5,7 +5,7 @@
 - src directory contains all scripts used for data analysis. It includes:
 	- Downloading data from SRA using fastq-dump
 	- Quality Control using fastp
-	- Alignment to the reference genome using samtools
+	- Alignment to the reference genome using BWA
 	- Post-alignment processes using samtools
 	- Variant calling using samtools and bcf tools
 	- Filtering Variants using perl script provided by bcftools
