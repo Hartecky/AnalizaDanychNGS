@@ -17,6 +17,6 @@ PROJECTS=(
 for SAMPLE in "${PROJECTS[@]}"
 do
 
-	vcfutils.pl varFilter "../vcfs/${SAMPLE}_variants.vcf" > "${SAMPLE}.final.vcf"
+	vcfutils.pl varFilter -Q 20 "../vcfs/${SAMPLE}_variants.vcf" > "${SAMPLE}.final.vcf"
 
 done

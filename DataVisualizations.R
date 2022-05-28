@@ -9,46 +9,61 @@
 library(ggplot2)
 library(gridExtra)
 library(purrr)
+library(vcfR)
+library(ape)
 
 PATH <- getwd()
 setwd(PATH)
 
 # ------------------------------------------------------------------------------
-# Reading data from VEP output
+# Reading VCF data
 
-SRR064545.vep <- read.table("final_data/vep_output/SRR064545.vep.txt", 
-                        header = TRUE, 
-                        sep = "\t")
+VCF.45 <- read.vcfR("final_data/SRR064545.final.vcf")
+VCF.46 <- read.vcfR("final_data/SRR064546.final.vcf")
+VCF.47 <- read.vcfR("final_data/SRR064547.final.vcf")
 
-SRR064545.vep$Chrom <- unlist(map(strsplit(SRR064545.vep$Uploaded_variation, "_"), 1))
+REFERENCE.GENOME <- read.dna("data/reference_genome/Saccharomyces.reference.genome.fa.gz", format = "fasta")
 
-SRR064546.vep <- read.table("final_data/vep_output/SRR064546.vep.txt", 
-                        header = TRUE, 
-                        sep = "\t")
+REFERENCE.ANNOT <- read.gff("data/reference_genome/Saccharomyces_cerevisiae.R64-1-1.106.gff3", na.strings = c(".", "?"), GFF3 = TRUE)
 
-SRR064546.vep$Chrom <- unlist(map(strsplit(SRR064546.vep$Uploaded_variation, "_"), 1))
-
-SRR064547.vep <- read.table("final_data/vep_output/SRR064547.vep.txt", 
-                        header = TRUE, 
-                        sep = "\t")
-
-SRR064547.vep$Chrom <- unlist(map(strsplit(SRR064547.vep$Uploaded_variation, "_"), 1))
 
 # ------------------------------------------------------------------------------
-# Plotting data
+# For each sample create vcfR chrom object
 
-# P - Plot annotated variants for each sample by chromosome
+make.chrom.obj <- function(vcf.object, name, ref.genome, ref.annot){
+  chrom <- create.chromR(vcf = vcf.object, 
+                         name = name, 
+                         seq = ref.genome, 
+                         ann = ref.annot)
+  
+  return(chrom)
+}
 
-p1 <- ggplot(SRR064545.vep, aes(x = Chrom)) + geom_bar(stat = 'count')
+SAMPLE.45 <- make.chrom.obj(vcf.object = VCF.45,
+                            name = "SAMPLE 45",
+                            ref.genome = REFERENCE.GENOME,
+                            ref.annot = REFERENCE.ANNOT)
 
-p2 <- ggplot(SRR064546.vep, aes(x = Chrom)) + geom_bar(stat = 'count')
+SAMPLE.46 <- make.chrom.obj(vcf.object = VCF.46,
+                            name = "SAMPLE 47",
+                            ref.genome = REFERENCE.GENOME,
+                            ref.annot = REFERENCE.ANNOT)
 
-p3 <- ggplot(SRR064547.vep, aes(x = Chrom)) + geom_bar(stat = 'count')
+SAMPLE.47 <- make.chrom.obj(vcf.object = VCF.47,
+                            name = "SAMPLE 47",
+                            ref.genome = REFERENCE.GENOME,
+                            ref.annot = REFERENCE.ANNOT)
 
-grid.arrange(p1, p2, p3, ncol = 3)
+# ------------------------------------------------------------------------------
+# Visualize results
 
-# Q - Plot annotated consequences
+plot(SAMPLE.45)
+chromoqc(SAMPLE.45)
 
-q1 <- ggplot(SRR064545.vep, aes(x = Chrom, fill = Consequence)) + geom_bar(stat = 'count')
+plot(SAMPLE.46)
+chromoqc(SAMPLE.46)
 
-q1
+plot(SAMPLE.47)
+chromoqc(SAMPLE.47)
+
+

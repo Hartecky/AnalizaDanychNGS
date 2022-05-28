@@ -27,6 +27,8 @@
 
 - logs directory contains messages and outputs from softwares
 
+- plots directory contains visualizations made by samtools and R scripts
+
 ## Tree of the directory structure
 
 ```{bash}
