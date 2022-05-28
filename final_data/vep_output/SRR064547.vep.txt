@@ -1,4 +1,4 @@
-#Uploaded_variation	Location	Allele	Consequence	IMPACT	SYMBOL	Gene	Feature_type	Feature	BIOTYPE	EXON	INTRON	HGVSc	HGVSp	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	DISTANCE	STRAND	FLAGS	SYMBOL_SOURCE	HGNC_ID	MANE_SELECT	MANE_PLUS_CLINICAL	TSL	APPRIS	SIFT	CLIN_SIG	SOMATIC	PHENO
+Uploaded_variation	Location	Allele	Consequence	IMPACT	SYMBOL	Gene	Feature_type	Feature	BIOTYPE	EXON	INTRON	HGVSc	HGVSp	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	DISTANCE	STRAND	FLAGS	SYMBOL_SOURCE	HGNC_ID	MANE_SELECT	MANE_PLUS_CLINICAL	TSL	APPRIS	SIFT	CLIN_SIG	SOMATIC	PHENO
 I_27126_T/C	I:27126-27126	C	upstream_gene_variant	MODIFIER	GDH3	YAL062W	Transcript	YAL062W_mRNA.	protein_coding	-	-	-	-	-	-	-	-	-	s01-27127	4441	1	-	SGD_GENE	-	-	-	-	-	-	-	-	-
 I_27126_T/C	I:27126-27126	C	upstream_gene_variant	MODIFIER	-	YAL063C-A	Transcript	YAL063C-A_mRNA.	protein_coding	-	-	-	-	-	-	-	-	-	s01-27127	4441	-1	-	-	-	-	-	-	-	-	-	-	-
 I_27126_T/C	I:27126-27126	C	synonymous_variant	LOW	FLO9	YAL063C	Transcript	YAL063C_mRNA.	protein_coding	1/1	-	-	-	843	843	281	E	gaA/gaG	s01-27127	-	-1	-	SGD_GENE	-	-	-	-	-	-	-	-	-
@@ -15930,7 +15930,7 @@ XIII_211566_T/C	XIII:211566-211566	C	downstream_gene_variant	MODIFIER	-	YML031C-
 XIII_211566_T/C	XIII:211566-211566	C	upstream_gene_variant	MODIFIER	NDC1	YML031W	Transcript	YML031W_mRNA.	protein_coding	-	-	-	-	-	-	-	-	-	s13-211566	2623	1	-	SGD_GENE	-	-	-	-	-	-	-	-	-
 XIII_211566_T/C	XIII:211566-211566	C	downstream_gene_variant	MODIFIER	RAD52	YML032C	Transcript	YML032C_mRNA.	protein_coding	-	-	-	-	-	-	-	-	-	s13-211566	949	-1	-	SGD_GENE	-	-	-	-	-	-	-	-	-
 XIII_211566_T/C	XIII:211566-211566	C	upstream_gene_variant	MODIFIER	-	YML034C-A	Transcript	YML034C-A_mRNA.	protein_coding	-	-	-	-	-	-	-	-	-	s13-211566	1740	-1	-	-	-	-	-	-	-	-	-	-	-
-XIII_211566_T/C	XIII:211566-211566	C	splice_region_variant,splice_polypyrimidine_tract_variant,intron_variant	LOW	SRC1	YML034W	Transcript	YML034W_mRNA.	protein_coding	-	1/1	-	-	-	-	-	-	-	s13-211566	-	1	-	SGD_GENE	-	-	-	-	-	-	-	-	-
+XIII_211566_T/C	XIII:211566-211566	C	splice_polypyrimidine_tract_variant,splice_region_variant,intron_variant	LOW	SRC1	YML034W	Transcript	YML034W_mRNA.	protein_coding	-	1/1	-	-	-	-	-	-	-	s13-211566	-	1	-	SGD_GENE	-	-	-	-	-	-	-	-	-
 XIII_211566_T/C	XIII:211566-211566	C	upstream_gene_variant	MODIFIER	AMD1	YML035C	Transcript	YML035C_mRNA.	protein_coding	-	-	-	-	-	-	-	-	-	s13-211566	2706	-1	-	SGD_GENE	-	-	-	-	-	-	-	-	-
 XIII_212592_C/G	XIII:212592-212592	G	upstream_gene_variant	MODIFIER	USA1	YML029W	Transcript	YML029W_mRNA.	protein_coding	-	-	-	-	-	-	-	-	-	s13-212592	4770	1	-	SGD_GENE	-	-	-	-	-	-	-	-	-
 XIII_212592_C/G	XIII:212592-212592	G	upstream_gene_variant	MODIFIER	RCF1	YML030W	Transcript	YML030W_mRNA.	protein_coding	-	-	-	-	-	-	-	-	-	s13-212592	3843	1	-	SGD_GENE	-	-	-	-	-	-	-	-	-

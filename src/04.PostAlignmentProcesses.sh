@@ -27,4 +27,6 @@ do
 
 	samtools stat -@ 8 "${SAMPLE}$SORTED" >> "${SAMPLE}$STAT"
 
+	samtools coverage -o "${SAMPLE}.COV.txt" -m "${SAMPLE}$SORTED" 
+
 done
