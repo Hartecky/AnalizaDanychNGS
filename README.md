@@ -29,8 +29,113 @@
 
 - plots directory contains visualizations made by samtools and R scripts
 
-## Tree of the directory structure
+## Tree of the repository structure
 
 ```{bash}
-
+├── DataVisualizations.R
+├── Project overview.txt
+├── RAPORT.md
+├── README.md
+├── data
+│   ├── alignment
+│   │   ├── SRR064545.bam
+│   │   ├── SRR064545.sorted.bam
+│   │   ├── SRR064545.sorted.bam.bai
+│   │   ├── SRR064546.bam
+│   │   ├── SRR064546.sorted.bam
+│   │   ├── SRR064546.sorted.bam.bai
+│   │   ├── SRR064547.bam
+│   │   ├── SRR064547.sorted.bam
+│   │   └── SRR064547.sorted.bam.bai
+│   ├── qc_data
+│   │   ├── SRR064545_1.fastq.gz
+│   │   ├── SRR064545_2.fastq.gz
+│   │   ├── SRR064545qc_fastp.html
+│   │   ├── SRR064546_1.fastq.gz
+│   │   ├── SRR064546_2.fastq.gz
+│   │   ├── SRR064546qc_fastp.html
+│   │   ├── SRR064547_1.fastq.gz
+│   │   ├── SRR064547_2.fastq.gz
+│   │   └── SRR064547qc_fastp.html
+│   ├── raw_data
+│   │   ├── SRR064545_1.fastq.gz
+│   │   ├── SRR064545_2.fastq.gz
+│   │   ├── SRR064546_1.fastq.gz
+│   │   ├── SRR064546_2.fastq.gz
+│   │   ├── SRR064547_1.fastq.gz
+│   │   └── SRR064547_2.fastq.gz
+│   └── reference_genome
+│       ├── SRR064545.sai
+│       ├── SRR064546.sai
+│       ├── SRR064547.sai
+│       ├── Saccharomyces.reference.genome.fa.gz
+│       ├── Saccharomyces.reference.genome.fa.gz.amb
+│       ├── Saccharomyces.reference.genome.fa.gz.ann
+│       ├── Saccharomyces.reference.genome.fa.gz.bwt
+│       ├── Saccharomyces.reference.genome.fa.gz.fai
+│       ├── Saccharomyces.reference.genome.fa.gz.pac
+│       ├── Saccharomyces.reference.genome.fa.gz.sa
+│       ├── Saccharomyces_cerevisiae.R64-1-1.106.gff3
+│       ├── Saccharomyces_cerevisiae.genome.fa.gz
+│       ├── contigs
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.I.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.II.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.III.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.IV.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.IX.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.Mito.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.V.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VI.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VII.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.VIII.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.X.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XI.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XII.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XIII.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XIV.fa.gz
+│       │   ├── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XV.fa.gz
+│       │   └── Saccharomyces_cerevisiae.R64-1-1.dna.chromosome.XVI.fa.gz
+│       └── index.txt
+├── final_data
+│   ├── SRR064545.final.vcf
+│   ├── SRR064546.final.vcf
+│   ├── SRR064547.final.vcf
+│   └── vep_output
+├── logs
+│   ├── BWAAlignmentLogs.txt
+│   ├── BWAIndexLogs.txt
+│   ├── DownloadDataLogs.txt
+│   ├── QC.logs.txt
+│   ├── SRR064545.flagstat_logs.txt
+│   ├── SRR064545.stat_logs.txt
+│   ├── SRR064546.flagstat_logs.txt
+│   ├── SRR064546.stat_logs.txt
+│   ├── SRR064547.flagstat_logs.txt
+│   └── SRR064547.stat_logs.txt
+├── plots
+│   ├── SRR064545.COV.txt
+│   ├── SRR064546.COV.txt
+│   ├── SRR064547.COV.txt
+│   └── VCFR
+│       ├── 45.CHROMOQC.jpeg
+│       ├── 45.PLOT.jpeg
+│       ├── 46.CHROMOQC.jpeg
+│       ├── 46.PLOT.jpeg
+│       ├── 47.CHROMOQC.jpeg
+│       └── 47.PLOT.jpeg
+├── src
+│   ├── 01.DownloadSRAData.sh
+│   ├── 02.QC.sh
+│   ├── 03.ReferenceGenomeAlignment.sh
+│   ├── 04.PostAlignmentProcesses.sh
+│   ├── 05.VariantCalling.sh
+│   ├── 06.FilteringVariants.sh
+│   └── addons
+│       ├── ChangeChromNames.sh
+│       ├── DownloadReferenceGenome.sh
+│       └── MergeGenome.sh
+└── vcfs
+    ├── SRR064545_variants.vcf
+    ├── SRR064546_variants.vcf
+    └── SRR064547_variants.vcf
 ```

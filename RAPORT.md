@@ -1,11 +1,13 @@
 # Variant Calling pipeline for NGS Data Analysis Course
 
-1. Obtaining project data from NCBI SRA database: SRA - SRP003355. The study was entitled "Pooled linkage analysis for discovery of Saccharomyces cerevisiae functional mutations by whole genome sequencing" and contained three samples:
+1. Obtaining project data from NCBI SRA database: SRA - SRP003355. The study was entitled "Pooled linkage analysis for discovery of Saccharomyces cerevisiae functional mutations by whole genome sequencing" and it contained three samples:
     - Yeast vac22, wild-type segregant pool
     - Yeast vac6, mutant segregant pool
     - Yeast vac6, wild-type segregant pool
 
-All samples were equenced via Illumina Genome Analyzer in WGS strategy using paired-end sequencing module.
+
+
+    All samples were sequenced via Illumina Genome Analyzer in WGS strategy using paired-end sequencing module.
 
 2. The raw reads were controlled for its quality, and based on QC reports they were trimmed. Both steps were done by fastp software.
 
