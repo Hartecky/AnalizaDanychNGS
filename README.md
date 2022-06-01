@@ -31,7 +31,7 @@
 - plots directory contains visualizations made by samtools and R scripts
 
 ## Tree of the repository structure
-
+```
 ├── Project overview.txt
 ├── RAPORT.md
 ├── README.md
@@ -148,3 +148,4 @@
         ├── ChangeChromNames.sh
         ├── DownloadReferenceGenome.sh
         └── MergeGenome.sh
+```
