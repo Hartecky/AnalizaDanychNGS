@@ -5,8 +5,6 @@
     - Yeast vac6, mutant segregant pool
     - Yeast vac6, wild-type segregant pool
 
-
-
     All samples were sequenced via Illumina Genome Analyzer in WGS strategy using paired-end sequencing module.
 
 2. The raw reads were controlled for its quality, and based on QC reports they were trimmed. Both steps were done by fastp software.
@@ -17,7 +15,7 @@
 
 5. With use of samtools and bcftools variants were called by comparing aligned reads with reference genome.
 
-6. Functional annotation was done by Variant Effect Predictor tool (VEP), provided by Ensembl.
+6. Functional annotation was done by snpEff tool.
 
 7. VCF files along with annotated variants were visualized using R with ggplot2 and vcfR package
 
@@ -35,7 +33,7 @@ flowchart TD;
     
     E[Variant Calling \n\n samtools & bcftools] --> F[Variant Filtering \n\n bcftools];
     
-    F[Variant Filtering \n\n bcftools] --> G[Functional Annotation \n\n Variant Effect Predictor];
+    F[Variant Filtering \n\n bcftools] --> G[Functional Annotation \n\n snpEff];
     
-    G[Functional Annotation \n\n Variant Effect Predictor] --> H[Data Visualization \n\n R + ggplot2 + vcfR];
+    G[Functional Annotation \n\n snpEff] --> H[Data Visualization \n\n R + vcfR + snpEff];
 ```
